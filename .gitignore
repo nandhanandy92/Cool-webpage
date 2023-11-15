@@ -400,3 +400,5 @@ Infrastructure/.terraform/providers/registry.opentofu.org/hashicorp/aws/5.24.0/w
 Infrastructure/.terraform/providers/registry.opentofu.org/hashicorp/aws/5.24.0/windows_amd64/LICENSE
 Infrastructure/.terraform/providers/registry.opentofu.org/hashicorp/aws/5.24.0/windows_amd64/README.md
 Infrastructure/.terraform/providers/registry.opentofu.org/hashicorp/aws/5.24.0/windows_amd64/terraform-provider-aws.exe
+Infrastructure/terraform.tfstate
+Infrastructure/terraform.tfstate.backup
