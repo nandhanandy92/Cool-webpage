@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "website" {
-  bucket = "myCoolWebsite_23"
+  bucket = "bucketwork-demo-sjitaw"
 }
 
 resource "aws_s3_bucket_ownership_controls" "website" {
@@ -59,4 +59,9 @@ resource "aws_s3_object" "error" {
   acl   = "public-read"
 
   source = "../src/error.html"  
+}
+
+output "s3_bucket_bucket_domain_name" {
+  description = "The bucket domain name. Will be of format bucketname.s3.amazonaws.com."
+  value       = try(aws_s3_bucket.website.bucket_domain_name, "")
 }
